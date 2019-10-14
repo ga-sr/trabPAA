@@ -1,11 +1,11 @@
 #Trabalho de PAA
 
-###Alunos:
-1- Gabriel Rocha
-1- Guilherme Molina
-1- Luana Marques
+### Alunos:
+- Gabriel Rocha
+- Guilherme Molina
+- Luana Marques
 
-##Algorítimos Implementados:
+## Algorítimos Implementados:
 - Bubble Sort (versão original sem melhorias)
 - Bubble Sort melhorado (verifica se o vetor já está ordenado)
 - Quick Sort (com pivô sendo o primeiro elemento da lista – partição)

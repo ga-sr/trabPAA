@@ -1,14 +1,14 @@
-def bubbleSort(array):
+def bubbleSort(array): #certo
     size = len(array)
-    for j in range(size):
+    for j in range(size - 1):
         for i in range(size - j - 1):
             if array[i] > array[i + 1]:
                 array[i], array[i + 1] = array[i + 1], array[i]
 
 
-def bubbleSortXd(array):
+def bubbleSortMelhorado(array): #certo
     size = len(array)
-    for j in range(size):
+    for j in range(size - 1):
         switch = False
         for i in range(size - j - 1):
             if array[i] > array[i + 1]:
@@ -84,7 +84,7 @@ def mergeSorte(array, e, d):
         mergeSorte(array, q+1, d)
         merge(array, e, q, d)
 
-def insertionSort(array):
+def insertionSort(array): #certo
     size = len(array)
     for i in range(1, size):
         elem = array[i]
@@ -94,7 +94,7 @@ def insertionSort(array):
             j-=1
         array[j+1] = elem
 
-def selectionSort(array):
+def selectionSort(array): #certo
     size = len(array)
     for i in range(size-1):
         menor = array[i]
@@ -119,7 +119,7 @@ def shellSort(array, incs):
                 j-=span
             array[j+span] = x
 
-def heapify(arr, n, i): 
+def heapify(arr, n, i): #certo
     largest = i 
     l = 2 * i + 1 
     r = 2 * i + 2 
@@ -135,13 +135,12 @@ def heapify(arr, n, i):
 
         heapify(arr, n, largest) 
 
-def heapSort(arr): 
+def heapSort(arr): #certo
     n = len(arr)
 
-    for i in range(n, -1, -1): 
+    for i in range(n, -1, -1):
         heapify(arr, n, i) 
 
     for i in range(n-1, 0, -1): 
         arr[i], arr[0] = arr[0], arr[i]
         heapify(arr, i, 0)
-

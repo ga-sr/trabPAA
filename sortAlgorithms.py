@@ -1,3 +1,5 @@
+import math
+
 def bubbleSort(array): #certo
     size = len(array)
     for j in range(size - 1):
@@ -41,7 +43,7 @@ def quickSort(array, p, r):
         quickSort(array, q+1, r)
 
 
-def merge(array, e, q, d):
+def merge(array, e, q, d): #certo
     n1 = q - e + 1
     n2 = d - q
 
@@ -77,11 +79,11 @@ def merge(array, e, q, d):
         k += 1
 
 
-def mergeSorte(array, e, d):
+def mergeSort(array, e, d): #certo
     if e < d:
-        q = (e+(d-1))/2
-        mergeSorte(array, e, q)
-        mergeSorte(array, q+1, d)
+        q = math.floor((e+d)/2)
+        mergeSort(array, e, q)
+        mergeSort(array, q+1, d)
         merge(array, e, q, d)
 
 def insertionSort(array): #certo

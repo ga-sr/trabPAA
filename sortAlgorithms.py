@@ -20,7 +20,7 @@ def bubbleSortMelhorado(array): #certo
             break
 
 
-def elParticion(array, p, r):
+def elParticion(array, p, r): #certo
     x = array[p]
     up = r
     down = p
@@ -36,7 +36,7 @@ def elParticion(array, p, r):
     return(up)
 
 
-def quickSort(array, p, r):
+def quickSort(array, p, r): #certo
     if p < r:
         q = elParticion(array, p, r)
         quickSort(array, p, q-1)
@@ -108,7 +108,7 @@ def selectionSort(array): #certo
         array[index] = array[i]
         array[i] = menor
 
-def shellSort(array, incs):
+def shellSort(array, incs): #certo
     sizear = len(array)
     sizein = len(incs)
     for inc in range(sizein):
